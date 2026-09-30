@@ -10,4 +10,4 @@ Proyecto Integrador I · Universidad Tecnológica de Durango
 - Dylan Percy Rodríguez Sánchez: Equipo de desarrollo
 
 ##Tablero Kanban
-https://github.com/users/Zwain-UnU/projects/1/views/1?pane=issue&itemId=258328113&issue=Zwain-UnU%7COOP-Leonel-Sifuentes4BBIS%7C2
+- https://github.com/users/Zwain-UnU/projects/1/views/1?pane=issue&itemId=258328113&issue=Zwain-UnU%7COOP-Leonel-Sifuentes4BBIS%7C2
