@@ -2,10 +2,9 @@
 aqui practicamente acomodamos y importamos todo lo de 
 los demas archivos para que despues
 aparezca en la ejecucion :D
-"""
-"""VENTANA PRINCIPAL del sistema.
 
-Esta clase es el "director de orquesta": arma la estructura fija (menú lateral,
+
+ arma la estructura fija (menú lateral
 cabecera, pie) y decide qué pantalla se muestra en el centro.
 """
 
