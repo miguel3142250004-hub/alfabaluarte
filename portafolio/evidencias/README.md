@@ -5,7 +5,6 @@ Este directorio contiene el artefacto computacional desarrollado en Python para 
 ## Archivos incluidos
 * `prototipo_gantt.py`: Script principal generado con las librerías `pandas` y `matplotlib`.
 * `datos_gantt.csv`: Archivo de datos base exportado del cronograma del proyecto.
-* `gantt_alfa_baluarte.png`: Gráfica resultante generada automáticamente por el script.
 
 ## Requisitos de instalación
 Para ejecutar este script, necesitas tener Python instalado y las siguientes librerías. Puedes instalarlas ejecutando este comando en tu terminal:
