@@ -6,6 +6,8 @@ y va ser la barra lateral del sistema uwu
 bueno si es que se queda veda capaz y se va a la chingada ñya
 """
 import tkinter as tk
+from pathlib import Path
+
 from src.views.theme import COLORES, FUENTES
 
 
@@ -19,11 +21,23 @@ class BarraLateral(tk.Frame):
         logo_bloque = tk.Frame(self, bg=COLORES["navy"])
         logo_bloque.pack(fill="x", padx=22, pady=(27, 30))
 
+        logo_path = Path(__file__).resolve().parents[2] / "assets" / "logo.png"
+        try:
+            self.logo_imagen = tk.PhotoImage(file=str(logo_path))
+        except (FileNotFoundError, tk.TclError) as error:
+            raise RuntimeError(
+                f"Error, logo no encontrado."
+            ) from error
+
+        factor_reduccion = max(1, (self.logo_imagen.width() + 63) // 64)
+        if factor_reduccion > 1:
+            self.logo_imagen = self.logo_imagen.subsample(
+                factor_reduccion, factor_reduccion
+            )
+
         tk.Label(
-            logo_bloque, text="AB",
-            bg=COLORES["turquesa"], fg="white",
-            font=("Arial", 17, "bold"),
-            width=3, height=1, pady=7,
+            logo_bloque, image=self.logo_imagen,
+            bg=COLORES["navy"], bd=0,
         ).pack(side="left", anchor="n")
 
         textos = tk.Frame(logo_bloque, bg=COLORES["navy"])
