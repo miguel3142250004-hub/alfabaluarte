@@ -11,3 +11,8 @@ Proyecto Integrador I · Universidad Tecnológica de Durango
 
 ## Tablero Kanban
 - https://github.com/users/Zwain-UnU/projects/1/views/1
+
+## Base de datos
+
+La base de datos se encuentra en: [`sistema/database/alfabaluarte.sql`](sistema/database/alfabaluarte.sql).
+
