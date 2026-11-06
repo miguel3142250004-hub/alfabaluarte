@@ -1,0 +1,5 @@
+CREATE USER clinica_app WITH PASSWORD 'admindemo123';
+GRANT CONNECT ON DATABASE alfabaluarte TO clinica_app;
+GRANT USAGE ON SCHEMA clinica TO clinica_app;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA clinica TO clinica_app;
+GRANT USAGE, SELECT, UPDATE ON ALL SEQUENCES IN SCHEMA clinica TO clinica_app;
